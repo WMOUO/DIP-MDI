@@ -132,3 +132,17 @@ C:\Users\linda\Desktop\113-2 數位影像處理\作業\DIP-MDI\DIP\obj\x86\Debug
 C:\Users\linda\Desktop\113-2 數位影像處理\作業\DIP-MDI\DIP\obj\x86\Debug\DIP.csproj.CoreCompileInputs.cache
 C:\Users\linda\Desktop\113-2 數位影像處理\作業\DIP-MDI\DIP\obj\x86\Debug\DIP.exe
 C:\Users\linda\Desktop\113-2 數位影像處理\作業\DIP-MDI\DIP\obj\x86\Debug\DIP.pdb
+D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\bin\x86\Debug\DIP.exe.config
+D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\bin\x86\Debug\DIP.exe
+D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\bin\x86\Debug\DIP.pdb
+D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\obj\x86\Debug\DIP.csproj.AssemblyReference.cache
+D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\obj\x86\Debug\DIP.BTForm.resources
+D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\obj\x86\Debug\DIP.CBForm.resources
+D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\obj\x86\Debug\DIP.DIPSample.resources
+D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\obj\x86\Debug\DIP.HForm.resources
+D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\obj\x86\Debug\DIP.MSForm.resources
+D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\obj\x86\Debug\DIP.Properties.Resources.resources
+D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\obj\x86\Debug\DIP.csproj.GenerateResource.cache
+D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\obj\x86\Debug\DIP.csproj.CoreCompileInputs.cache
+D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\obj\x86\Debug\DIP.exe
+D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\obj\x86\Debug\DIP.pdb

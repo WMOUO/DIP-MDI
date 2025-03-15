@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
 
 namespace DIP
 {
@@ -14,8 +15,11 @@ namespace DIP
     {
         internal Bitmap pBitmap;
         internal ToolStripStatusLabel pf1;
+        internal ToolStripStatusLabel pf2;
         int w, h;
+        [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
 
+        unsafe public static extern double locationWithLight(int r, int g, int b);
         public MSForm()
         {
             InitializeComponent();
@@ -64,11 +68,17 @@ namespace DIP
             }
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
             Color pixel = pBitmap.GetPixel(e.X, e.Y);
-            pf1.Text = "(" + e.X + "," + e.Y + ")" +
-                        "=(" + pixel.R.ToString() + "," + pixel.G.ToString() + "," + pixel.B.ToString() + ")"; 
+            pf1.Text = "座標："+"(" + e.X + "," + e.Y + ")";
+            double brightness = locationWithLight(pixel.R, pixel.G, pixel.B);
+            pf2.Text = "亮度：" + brightness.ToString();
         }
 
     }

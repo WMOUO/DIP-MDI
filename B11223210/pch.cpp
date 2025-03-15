@@ -117,4 +117,9 @@ extern "C" {
 		for (int i = 0; i < w * h; i++)
 			g0[i] = 255 - f0[i];
 	}
+	__declspec(dllexport) double locationWithLight(int r, int g, int b)
+	{
+		double light = 0.299 * r + 0.587 * g + 0.114 * b;
+		return light;
+	}
 }
