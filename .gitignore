@@ -43,7 +43,7 @@ wwwroot/lib/
 *.log
 
 # 使用者環境設定
-*.vs/
+.vs/
 *.DS_Store
 Thumbs.db
 
