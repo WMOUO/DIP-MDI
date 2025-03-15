@@ -51,6 +51,7 @@ namespace DIP
         {
             this.IsMdiContainer = true;
             this.WindowState = FormWindowState.Maximized;
+            this.toolStripStatusLabel1.Text = "";
 			this.toolStripStatusLabel2.Text = "";
         }
 
@@ -216,7 +217,8 @@ namespace DIP
                     break;
                 }
             }
-            bt.tssl = toolStripStatusLabel2;
+            bt.tssl_1 = toolStripStatusLabel1;
+            bt.tssl_2 = toolStripStatusLabel2;
             bt.dip = this;
             bt.Show();
         }
@@ -406,7 +408,8 @@ namespace DIP
                     break;
                 }
             }
-            cb.tssl = toolStripStatusLabel2;
+            cb.tssl_1 = toolStripStatusLabel1;
+            cb.tssl_2 = toolStripStatusLabel2;
             cb.dip = this;
             cb.Show();
         }

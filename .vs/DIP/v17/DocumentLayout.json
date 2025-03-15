@@ -1,17 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\",
+  "WorkspaceRootPath": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|d:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\dip-mdi\\dip\\msform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\msform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|C:\\Users\\linda\\source\\Repos\\DIP-MDI\\dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|c:\\users\\linda\\source\\repos\\dip-mdi\\dip\\btform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\btform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|c:\\users\\linda\\source\\repos\\dip-mdi\\dip\\btform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\btform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|c:\\users\\linda\\source\\repos\\dip-mdi\\dip\\cbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\cbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|c:\\users\\linda\\source\\repos\\dip-mdi\\dip\\cbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\cbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|c:\\users\\linda\\source\\repos\\dip-mdi\\dip\\msform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\msform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|C:\\Users\\linda\\source\\Repos\\DIP-MDI\\dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -22,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,43 +65,89 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CBForm.cs",
+              "DocumentMoniker": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\CBForm.cs",
+              "RelativeDocumentMoniker": "DIP\\CBForm.cs",
+              "ToolTip": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\CBForm.cs*",
+              "RelativeToolTip": "DIP\\CBForm.cs*",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAEwGAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T12:49:35.096Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "CBForm.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\CBForm.cs",
+              "RelativeDocumentMoniker": "DIP\\CBForm.cs",
+              "ToolTip": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\CBForm.cs [\u8A2D\u8A08]*",
+              "RelativeToolTip": "DIP\\CBForm.cs [\u8A2D\u8A08]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T12:49:33.534Z",
+              "EditorCaption": " [\u8A2D\u8A08]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BTForm.cs",
+              "DocumentMoniker": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\BTForm.cs",
+              "RelativeDocumentMoniker": "DIP\\BTForm.cs",
+              "ToolTip": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\BTForm.cs*",
+              "RelativeToolTip": "DIP\\BTForm.cs*",
+              "ViewState": "AgIAADYAAAAAAAAAAAApwEUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T12:48:02.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BTForm.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\BTForm.cs",
+              "RelativeDocumentMoniker": "DIP\\BTForm.cs",
+              "ToolTip": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\BTForm.cs [\u8A2D\u8A08]*",
+              "RelativeToolTip": "DIP\\BTForm.cs [\u8A2D\u8A08]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T12:48:00.217Z",
+              "EditorCaption": " [\u8A2D\u8A08]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MSForm.cs",
-              "DocumentMoniker": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\MSForm.cs",
+              "DocumentMoniker": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\MSForm.cs",
               "RelativeDocumentMoniker": "DIP\\MSForm.cs",
-              "ToolTip": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\MSForm.cs",
+              "ToolTip": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\MSForm.cs",
               "RelativeToolTip": "DIP\\MSForm.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T09:26:06.212Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DIPSample.cs",
-              "DocumentMoniker": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\DIPSample.cs",
+              "DocumentMoniker": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\DIPSample.cs",
               "RelativeDocumentMoniker": "DIP\\DIPSample.cs",
-              "ToolTip": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\DIPSample.cs",
-              "RelativeToolTip": "DIP\\DIPSample.cs",
-              "ViewState": "AgIAAF4BAAAAAAAAAAAswLwBAAA1AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\DIPSample.cs*",
+              "RelativeToolTip": "DIP\\DIPSample.cs*",
+              "ViewState": "AgIAAMYBAAAAAAAAAAAqwJsBAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T16:16:38.585Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "DIPSample.cs [\u8A2D\u8A08]",
-              "DocumentMoniker": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\DIPSample.cs",
+              "DocumentMoniker": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\DIPSample.cs",
               "RelativeDocumentMoniker": "DIP\\DIPSample.cs",
-              "ToolTip": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\DIPSample.cs [\u8A2D\u8A08]",
-              "RelativeToolTip": "DIP\\DIPSample.cs [\u8A2D\u8A08]",
+              "ToolTip": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\DIPSample.cs [\u8A2D\u8A08]*",
+              "RelativeToolTip": "DIP\\DIPSample.cs [\u8A2D\u8A08]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T16:13:00.063Z",
               "EditorCaption": " [\u8A2D\u8A08]"

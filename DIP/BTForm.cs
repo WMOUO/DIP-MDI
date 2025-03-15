@@ -14,7 +14,7 @@ namespace DIP
     public partial class BTForm: Form
     {
         public Bitmap bitmap;
-        public ToolStripStatusLabel tssl;
+        public ToolStripStatusLabel tssl_1,tssl_2;
         public DIPSample dip;
         int n;
 
@@ -66,7 +66,8 @@ namespace DIP
 
             MSForm childForm = new MSForm();
             childForm.MdiParent = dip;
-            childForm.pf1 = tssl;
+            childForm.pf1 = tssl_1;
+            childForm.pf2 = tssl_2;
             childForm.pBitmap = new Bitmap(pictureBox1.Image);
             childForm.Show();
             this.Close();
