@@ -165,8 +165,9 @@ namespace DIP
 			   }
 			MSForm childForm = new MSForm();
 	        childForm.MdiParent = this;
-            childForm.pf1 = toolStripStatusLabel2;
-			childForm.pBitmap = NpBitmap; 
+            childForm.pf1 = toolStripStatusLabel1;
+            childForm.pf2 = toolStripStatusLabel2;
+            childForm.pBitmap = NpBitmap; 
 			childForm.Show();
         }
 
@@ -198,7 +199,8 @@ namespace DIP
             }
             MSForm childForm = new MSForm();
             childForm.MdiParent = this;
-            childForm.pf1 = toolStripStatusLabel2;
+            childForm.pf1 = toolStripStatusLabel1;
+            childForm.pf2 = toolStripStatusLabel2;
             childForm.pBitmap = NpBitmap;
             childForm.Show();
         }
@@ -242,7 +244,8 @@ namespace DIP
             }
             MSForm childForm = new MSForm();
             childForm.MdiParent = this;
-            childForm.pf1 = toolStripStatusLabel2;
+            childForm.pf1 = toolStripStatusLabel1;
+            childForm.pf2 = toolStripStatusLabel2;
             childForm.pBitmap = NpBitmap;
             childForm.Show();
         }
@@ -270,7 +273,8 @@ namespace DIP
             }
             MSForm childForm = new MSForm();
             childForm.MdiParent = this;
-            childForm.pf1 = toolStripStatusLabel2;
+            childForm.pf1 = toolStripStatusLabel1;
+            childForm.pf2 = toolStripStatusLabel2;
             childForm.pBitmap = NpBitmap;
             childForm.Show();
         }
@@ -298,7 +302,8 @@ namespace DIP
             }
             MSForm childForm = new MSForm();
             childForm.MdiParent = this;
-            childForm.pf1 = toolStripStatusLabel2;
+            childForm.pf1 = toolStripStatusLabel1;
+            childForm.pf2 = toolStripStatusLabel2;
             childForm.pBitmap = NpBitmap;
             childForm.Show();
         }
@@ -326,7 +331,8 @@ namespace DIP
             }
             MSForm childForm = new MSForm();
             childForm.MdiParent = this;
-            childForm.pf1 = toolStripStatusLabel2;
+            childForm.pf1 = toolStripStatusLabel1;
+            childForm.pf2 = toolStripStatusLabel2;
             childForm.pBitmap = NpBitmap;
             childForm.Show();
         }
@@ -354,7 +360,8 @@ namespace DIP
             }
             MSForm childForm = new MSForm();
             childForm.MdiParent = this;
-            childForm.pf1 = toolStripStatusLabel2;
+            childForm.pf1 = toolStripStatusLabel1;
+            childForm.pf2 = toolStripStatusLabel2;
             childForm.pBitmap = NpBitmap;
             childForm.Show();
         }
@@ -382,7 +389,8 @@ namespace DIP
             }
             MSForm childForm = new MSForm();
             childForm.MdiParent = this;
-            childForm.pf1 = toolStripStatusLabel2;
+            childForm.pf1 = toolStripStatusLabel1;
+            childForm.pf2 = toolStripStatusLabel2;
             childForm.pBitmap = NpBitmap;
             childForm.Show();
         }
