@@ -1,0 +1,64 @@
+# Visual Studio 的建置輸出
+bin/
+obj/
+
+# Rider IDE
+.idea/
+*.sln.iml
+
+# VSCode
+.vscode/
+
+# 用於 NuGet 套件還原
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.assets.json
+
+# 用於 ASP.NET Core 的臨時檔案
+wwwroot/node_modules/
+wwwroot/lib/
+
+# 使用者特定的 Visual Studio 檔案
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# 編譯時產生的檔案
+*.dll
+*.exe
+*.pdb
+*.cache
+*.ilk
+*.obj
+*.o
+*.a
+*.lib
+*.exp
+*.idb
+*.tlog
+*.lastbuildstate
+*.log
+
+# 使用者環境設定
+*.vs/
+*.DS_Store
+Thumbs.db
+
+# 機器學習模型的臨時檔案
+*.model
+*.h5
+
+# 不要上傳的敏感性檔案
+secrets.json
+appsettings.json
+appsettings.*.json
+
+# NuGet 還原的檔案
+project.lock.json
+project.assets.json
+
+# Docker
+docker-compose.override.yml
