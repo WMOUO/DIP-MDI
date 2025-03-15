@@ -146,3 +146,17 @@ D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\obj\x86\Debug\
 D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\obj\x86\Debug\DIP.csproj.CoreCompileInputs.cache
 D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\obj\x86\Debug\DIP.exe
 D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\obj\x86\Debug\DIP.pdb
+C:\Users\linda\Source\Repos\DIP-MDI\DIP\bin\x86\Debug\DIP.exe.config
+C:\Users\linda\Source\Repos\DIP-MDI\DIP\bin\x86\Debug\DIP.exe
+C:\Users\linda\Source\Repos\DIP-MDI\DIP\bin\x86\Debug\DIP.pdb
+C:\Users\linda\Source\Repos\DIP-MDI\DIP\obj\x86\Debug\DIP.csproj.AssemblyReference.cache
+C:\Users\linda\Source\Repos\DIP-MDI\DIP\obj\x86\Debug\DIP.BTForm.resources
+C:\Users\linda\Source\Repos\DIP-MDI\DIP\obj\x86\Debug\DIP.CBForm.resources
+C:\Users\linda\Source\Repos\DIP-MDI\DIP\obj\x86\Debug\DIP.DIPSample.resources
+C:\Users\linda\Source\Repos\DIP-MDI\DIP\obj\x86\Debug\DIP.HForm.resources
+C:\Users\linda\Source\Repos\DIP-MDI\DIP\obj\x86\Debug\DIP.MSForm.resources
+C:\Users\linda\Source\Repos\DIP-MDI\DIP\obj\x86\Debug\DIP.Properties.Resources.resources
+C:\Users\linda\Source\Repos\DIP-MDI\DIP\obj\x86\Debug\DIP.csproj.GenerateResource.cache
+C:\Users\linda\Source\Repos\DIP-MDI\DIP\obj\x86\Debug\DIP.csproj.CoreCompileInputs.cache
+C:\Users\linda\Source\Repos\DIP-MDI\DIP\obj\x86\Debug\DIP.exe
+C:\Users\linda\Source\Repos\DIP-MDI\DIP\obj\x86\Debug\DIP.pdb
