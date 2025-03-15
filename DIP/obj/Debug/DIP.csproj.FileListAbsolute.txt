@@ -1,0 +1,45 @@
+C:\Users\yllin\Desktop\新增資料夾\DIP\DIP\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yllin\Desktop\新增資料夾\DIP\DIP\obj\Debug\DIP.DIPSample.resources
+C:\Users\yllin\Desktop\新增資料夾\DIP\DIP\obj\Debug\DIP.Properties.Resources.resources
+C:\Users\yllin\Desktop\新增資料夾\DIP\DIP\obj\Debug\DIP.csproj.GenerateResource.Cache
+C:\Users\yllin\Desktop\新增資料夾\DIP\DIP\bin\Debug\DIP.exe
+C:\Users\yllin\Desktop\新增資料夾\DIP\DIP\bin\Debug\DIP.pdb
+C:\Users\yllin\Desktop\新增資料夾\DIP\DIP\obj\Debug\DIP.exe
+C:\Users\yllin\Desktop\新增資料夾\DIP\DIP\obj\Debug\DIP.pdb
+C:\Users\yllin\Desktop\DIP-01\DIP\obj\Debug\DIP.exe
+C:\Users\yllin\Desktop\DIP-01\DIP\obj\Debug\DIP.pdb
+C:\Users\yllin\Desktop\DIP-01\DIP\bin\Debug\DIP.exe
+C:\Users\yllin\Desktop\DIP-01\DIP\bin\Debug\DIP.pdb
+C:\Users\yllin\Desktop\DIP-01\DIP\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yllin\Desktop\DIP-01\DIP\obj\Debug\DIP.DIPSample.resources
+C:\Users\yllin\Desktop\DIP-01\DIP\obj\Debug\DIP.Properties.Resources.resources
+C:\Users\yllin\Desktop\DIP-01\DIP\obj\Debug\DIP.csproj.GenerateResource.Cache
+C:\Users\yllin\Desktop\DIP-02(C#)\DIP\obj\Debug\DIP.exe
+C:\Users\yllin\Desktop\DIP-02(C#)\DIP\obj\Debug\DIP.pdb
+C:\Users\yllin\Desktop\DIP-02(C#)\DIP\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yllin\Desktop\DIP-02(C#)\DIP\obj\Debug\DIP.DIPSample.resources
+C:\Users\yllin\Desktop\DIP-02(C#)\DIP\obj\Debug\DIP.Properties.Resources.resources
+C:\Users\yllin\Desktop\DIP-02(C#)\DIP\obj\Debug\DIP.csproj.GenerateResource.Cache
+C:\Users\yllin\Desktop\DIP-02(C#)\DIP\bin\Debug\DIP.exe
+C:\Users\yllin\Desktop\DIP-02(C#)\DIP\bin\Debug\DIP.pdb
+C:\Users\yllin\Desktop\DIP-02(C#)-1D\DIP\obj\Debug\DIP.exe
+C:\Users\yllin\Desktop\DIP-02(C#)-1D\DIP\obj\Debug\DIP.pdb
+C:\Users\yllin\Desktop\DIP-02(C#)-1D\DIP\bin\Debug\DIP.exe
+C:\Users\yllin\Desktop\DIP-02(C#)-1D\DIP\bin\Debug\DIP.pdb
+C:\Users\yllin\Desktop\DIP-02(C#)-1D\DIP\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yllin\Desktop\DIP-02(C#)-1D\DIP\obj\Debug\DIP.DIPSample.resources
+C:\Users\yllin\Desktop\DIP-02(C#)-1D\DIP\obj\Debug\DIP.Properties.Resources.resources
+C:\Users\yllin\Desktop\DIP-02(C#)-1D\DIP\obj\Debug\DIP.csproj.GenerateResource.Cache
+C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\DIP\bin\Debug\DIP.exe.config
+C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\DIP\bin\Debug\DIP.exe
+C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\DIP\bin\Debug\DIP.pdb
+C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\DIP\obj\Debug\DIP.csproj.AssemblyReference.cache
+C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\DIP\obj\Debug\DIP.DIPSample.resources
+C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\DIP\obj\Debug\DIP.MSForm.resources
+C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\DIP\obj\Debug\DIP.Properties.Resources.resources
+C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\DIP\obj\Debug\DIP.csproj.GenerateResource.cache
+C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\DIP\obj\Debug\DIP.csproj.CoreCompileInputs.cache
+C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\DIP\obj\Debug\DIP.exe
+C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\DIP\obj\Debug\DIP.pdb
+C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\DIP\obj\Debug\DIP.BTForm.resources
+C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\DIP\obj\Debug\DIP.CBForm.resources

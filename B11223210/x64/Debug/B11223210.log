@@ -1,0 +1,7 @@
+﻿  pch.cpp
+C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\B11223210\pch.cpp(77,11): warning C4244: '正在初始化': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\B11223210\pch.cpp(79,22): warning C4244: '=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\B11223210\pch.cpp(80,12): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+  dllmain.cpp
+     正在建立程式庫 C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\x64\Debug\B11223210.lib 和物件 C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\x64\Debug\B11223210.exp
+  B11223210.vcxproj -> C:\Users\linda\Desktop\113-2 數位影像處理\DIP-MDI\x64\Debug\B11223210.dll
