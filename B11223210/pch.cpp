@@ -4,8 +4,12 @@
 extern "C" {
 	__declspec(dllexport)void encode(int* f0, int w, int h, int* g0)
 	{
-		for (int i = 0; i < w * h; i++)
-			g0[i] = 255 - f0[i];
+		for (int i = 0; i < w * h * 3; i += 3) {
+			if (f0[i] == f0[i + 1] && f0[i] == f0[i + 2])
+				g0[i / 3] = f0[i];
+			else
+				g0[i / 3] = (int)(0.299 * f0[i] + 0.587 * f0[i + 1] + 0.114 * f0[i + 2]);
+		}
 	}
 	__declspec(dllexport)void mosaic(int* f0, int w, int h, int* g0, int a, int b, int x)
 	{

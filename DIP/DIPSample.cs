@@ -148,22 +148,29 @@ namespace DIP
             int []f;
             int []g;
             foreach (MSForm cF in MdiChildren)
-			   {
-					if (cF.Focused)
-					{
-					    f = bmp2array(cF.pBitmap);
-			            g=new int[w*h];
-                        unsafe
+			{
+                if (cF.Focused)
+                {
+                    f = new int[w * h * 3];
+                    g = new int[w * h];
+                    for (int i = 0; i < w; i++) {
+                        for (int j = 0; j < h; j++) {
+                            Color c = cF.pBitmap.GetPixel(i, j);
+                            int idx = (i + j*w) * 3;
+                            f[idx]= c.R; f[idx+1] = c.G; f[idx + 2] = c.B;
+                        }
+                    }
+                    unsafe
+                    {
+                        fixed (int* f0 = f) fixed (int* g0 = g)
                         {
-                            fixed (int* f0 = f) fixed (int* g0 = g)
-                            {
-                                encode(f0, w, h, g0);
-                            }
-                        } 
-                        NpBitmap = array2bmp(g);
-				        break;
-				    }
-			   }
+                            encode(f0, w, h, g0);
+                        }
+                    }
+                    NpBitmap = array2bmp(g);
+                    break;
+                }
+			}
 			MSForm childForm = new MSForm();
 	        childForm.MdiParent = this;
             childForm.pf1 = toolStripStatusLabel1;
