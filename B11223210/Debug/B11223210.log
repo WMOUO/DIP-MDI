@@ -1,8 +1,4 @@
 ﻿  pch.cpp
-C:\Users\vivi4\Desktop\DIP-MDI\B11223210\pch.cpp(81,11): warning C4244: '正在初始化': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-C:\Users\vivi4\Desktop\DIP-MDI\B11223210\pch.cpp(83,22): warning C4244: '=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\vivi4\Desktop\DIP-MDI\B11223210\pch.cpp(84,12): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+C:\Users\vivi4\Desktop\DIP-MDI\B11223210\pch.cpp(83,36): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
   dllmain.cpp
-  LINK : 最後的累加連結找不到或未建置 C:\Users\vivi4\Desktop\DIP-MDI\Debug\B11223210.dll，正在執行完整連結
-     正在建立程式庫 C:\Users\vivi4\Desktop\DIP-MDI\Debug\B11223210.lib 和物件 C:\Users\vivi4\Desktop\DIP-MDI\Debug\B11223210.exp
   B11223210.vcxproj -> C:\Users\vivi4\Desktop\DIP-MDI\Debug\B11223210.dll

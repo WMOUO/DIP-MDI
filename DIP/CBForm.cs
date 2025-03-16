@@ -46,7 +46,7 @@ namespace DIP
         private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
             float x = hScrollBar1.Value;
-            textBox2.Text = (x / 1000).ToString();
+            textBox2.Text = (x / 100+1).ToString();
             change_color();
         }
 
@@ -77,7 +77,7 @@ namespace DIP
             else
                 x = float.Parse(textBox2.Text);
 
-            hScrollBar1.Value = Convert.ToInt32(x * 1000);
+            hScrollBar1.Value = Convert.ToInt32((x-1) * 100);
             change_color();
         }
 
