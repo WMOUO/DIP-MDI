@@ -38,7 +38,7 @@ namespace DIP
         [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
         unsafe public static extern void Histograms(int* f0, int w, int h, double* c0);
         [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
-        unsafe public static extern void Histograms_Equalization(int* f0, int w, int h, double* c0, double* k0);
+        unsafe public static extern void Histograms_Equalization(int* f0, int w, int h,int* g0, double* c0, double* k0);
         [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
         unsafe public static extern void negative(int* f0, int w, int h, int* g0);
 
@@ -423,7 +423,7 @@ namespace DIP
         //還沒做完
         private void 直方圖ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            /*int[] f;
+            int[] f;
             double[] c = new double[256];
             foreach (MSForm cF in MdiChildren)
             {
@@ -443,12 +443,14 @@ namespace DIP
             HForm hForm = new HForm();
             hForm.data = c;
             hForm.title = "Histograms";
-            hForm.Show();*/
+            hForm.image = NpBitmap;
+            hForm.Show();
         }
 
         private void 直方等化圖ToolStripMenuItem_Click(object sender, EventArgs e)
-        {/*
+        {
             int[] f;
+            int[] g = new int[w * h];
             double[] c = new double[256];
             double[] k = new double[256];
             foreach (MSForm cF in MdiChildren)
@@ -458,10 +460,10 @@ namespace DIP
                     f = bmp2array(cF.pBitmap);
                     unsafe
                     {
-                        fixed (int* f0 = f) fixed (double* c0 = c) fixed (double* k0 = k)
+                        fixed (int* f0 = f) fixed (int* g0 = g) fixed (double* c0 = c) fixed (double* k0 = k)
                         {
                             Histograms(f0, w, h, c0);
-                            Histograms_Equalization(f0, w, h, c0, k0);
+                            Histograms_Equalization(f0, w, h,g0, c0, k0);
                         }
                     }
                     break;
@@ -471,7 +473,8 @@ namespace DIP
             HForm hForm = new HForm();
             hForm.data = c;
             hForm.title = "Histograms_Equalization";
-            hForm.Show();*/
+            hForm.image = array2bmp(g);
+            hForm.Show();
         }
 
         private void fileToolStripMenuItem_Click(object sender, EventArgs e)
