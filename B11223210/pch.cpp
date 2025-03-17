@@ -93,7 +93,7 @@ extern "C" {
 			c0[f0[i]]++;
 		}
 	}
-	__declspec(dllexport)void Histograms_Equalization(int* f0, int w, int h, double* c0, double* k0) {
+	__declspec(dllexport)void Histograms_Equalization(int* f0, int w, int h,int*g0, double* c0, double* k0) {
 		k0[0] = c0[0];
 		for (int j = 1; j < 256; j++) {
 			k0[j] = k0[j - 1] + c0[j];
@@ -102,8 +102,17 @@ extern "C" {
 			k0[j] = k0[j] * 255 / (w * h);
 			k0[j] = round(k0[j]);
 		}
-		for (int i = 0; i < 256; i++) {
-			c0[(int)k0[i]] = k0[i];
+		for (int i = 0; i < w * h; i++) {
+			for (int j = 0; j < 256; j++) {
+				if (f0[i] == j)
+					g0[i] = k0[j];
+			}
+		}
+		for (int i = 0; i < 256; i++)
+			c0[i] = 0;
+
+		for (int i = 0; i < w * h; i++) {
+			c0[g0[i]]++;
 		}
 	}
 	__declspec(dllexport)void byte_cut(int* f0, int w, int h, int* g0, int n) {
