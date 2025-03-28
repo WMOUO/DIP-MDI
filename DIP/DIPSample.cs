@@ -41,6 +41,10 @@ namespace DIP
         unsafe public static extern void Histograms_Equalization(int* f0, int w, int h,int* g0, double* c0, double* k0);
         [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
         unsafe public static extern void negative(int* f0, int w, int h, int* g0);
+        [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
+        unsafe public static extern void average_filter(int* f0, int w, int h, int* g0, int* k0, double* m);
+        [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
+        unsafe public static extern void gaussian_filter(int* f0, int w, int h, int* g0, int* k0);
 
         Bitmap NpBitmap;
         int[] f;
@@ -475,6 +479,67 @@ namespace DIP
             hForm.title = "Histograms_Equalization";
             hForm.image = array2bmp(g);
             hForm.Show();
+        }
+
+        private void 平均濾波ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int[] f;
+            int[] g = new int[w * h];
+            int[] k = new int[(w + 1) * (h + 1)];
+            double[] m = new double[9];
+            for (int i = 0; i < 9; i++)
+                m[i] = 1.0 / 9;
+            foreach (MSForm cF in MdiChildren)
+            {
+                if (cF.Focused)
+                {
+                    f = bmp2array(cF.pBitmap);
+                    unsafe
+                    {
+                        fixed (int* f0 = f) fixed (int* g0 = g) fixed (int* k0 = k) fixed (double* m0 = m)
+                        {
+                            average_filter(f0, w, h, g0, k0, m0);
+                        }
+                    }
+                    NpBitmap = array2bmp(g);
+                    break;
+                }
+            }
+            MSForm childForm = new MSForm();
+            childForm.MdiParent = this;
+            childForm.pf1 = toolStripStatusLabel1;
+            childForm.pf2 = toolStripStatusLabel2;
+            childForm.pBitmap = NpBitmap;
+            childForm.Show();
+        }
+
+        private void 高斯濾波ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int[] f;
+            int[] g = new int[w * h];
+            int[] k = new int[(w + 1) * (h + 1)];
+            foreach (MSForm cF in MdiChildren)
+            {
+                if (cF.Focused)
+                {
+                    f = bmp2array(cF.pBitmap);
+                    unsafe
+                    {
+                        fixed (int* f0 = f) fixed (int* g0 = g) fixed (int* k0 = k)
+                        {
+                            gaussian_filter(f0, w, h, g0, k0);
+                        }
+                    }
+                    NpBitmap = array2bmp(g);
+                    break;
+                }
+            }
+            MSForm childForm = new MSForm();
+            childForm.MdiParent = this;
+            childForm.pf1 = toolStripStatusLabel1;
+            childForm.pf2 = toolStripStatusLabel2;
+            childForm.pBitmap = NpBitmap;
+            childForm.Show();
         }
 
         private void fileToolStripMenuItem_Click(object sender, EventArgs e)

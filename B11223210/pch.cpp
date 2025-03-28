@@ -130,4 +130,54 @@ extern "C" {
 		double light = 0.299 * r + 0.587 * g + 0.114 * b;
 		return light;
 	}
+	__declspec(dllexport)void average_filter(int* f0, int w, int h, int* g0, int* k0, double* m)
+	{
+		for (int i = 1; i < h; i++) {
+			for (int j = 1; j < w; j++) {
+				k0[j + i * h] = f0[(j - 1) + (i - 1) * h];
+			}
+		}
+		for (int k = 0; k < h; k++)
+		{
+			for (int p = 0; p < w; p++)
+			{
+				double o = 0;
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+						int u = j + p;
+						int b = i + k;
+						o += k0[u + b * h] * m[j + i * 3];
+					}
+				}
+				g0[p + k * h] = round(o);
+			}
+		}
+	}
+	__declspec(dllexport)void gaussian_filter(int* f0, int w, int h, int* g0, int* k0)
+	{
+		for (int i = 1; i < h; i++) {
+			for (int j = 1; j < w; j++) {
+				k0[j + i * h] = f0[(j - 1) + (i - 1) * h];
+			}
+		}
+
+		double m[9] = { 0.0625,0.125,0.0625,0.125,0.25,0.125,0.0625,0.125,0.0625 };
+
+		for (int k = 0; k < h; k++)
+		{
+			for (int p = 0; p < w; p++)
+			{
+				double o = 0;
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+						int u = j + p;
+						int b = i + k;
+						o += k0[u + b * h] * m[j + i * 3];
+					}
+				}
+				g0[p + k * h] = round(o);
+
+			}
+		}
+	}
 }

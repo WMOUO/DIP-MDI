@@ -1,6 +1,8 @@
 ﻿  pch.cpp
-C:\Users\linda\Source\Repos\DIP-MDI\B11223210\pch.cpp(83,36): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\linda\Source\Repos\DIP-MDI\B11223210\pch.cpp(108,18): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\linda\source\Repos\DIP-MDI\B11223210\pch.cpp(83,36): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\linda\source\Repos\DIP-MDI\B11223210\pch.cpp(108,18): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\linda\source\Repos\DIP-MDI\B11223210\pch.cpp(152,26): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\linda\source\Repos\DIP-MDI\B11223210\pch.cpp(178,26): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
   dllmain.cpp
      正在建立程式庫 C:\Users\linda\source\Repos\DIP-MDI\Debug\B11223210.lib 和物件 C:\Users\linda\source\Repos\DIP-MDI\Debug\B11223210.exp
   B11223210.vcxproj -> C:\Users\linda\source\Repos\DIP-MDI\Debug\B11223210.dll

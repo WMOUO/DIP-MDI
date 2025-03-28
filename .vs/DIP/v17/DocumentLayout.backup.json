@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|C:\\Users\\linda\\source\\Repos\\DIP-MDI\\dip\\hform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\hform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8F1D8AEE-5AB1-4CC1-9EE4-68A4ECF266F9}|B11223210\\B11223210.vcxproj|C:\\Users\\linda\\source\\Repos\\DIP-MDI\\B11223210\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8F1D8AEE-5AB1-4CC1-9EE4-68A4ECF266F9}|B11223210\\B11223210.vcxproj|solutionrelative:B11223210\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|C:\\Users\\linda\\source\\Repos\\DIP-MDI\\dip\\cbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\cbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|C:\\Users\\linda\\source\\Repos\\DIP-MDI\\dip\\hform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\hform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|C:\\Users\\linda\\source\\Repos\\DIP-MDI\\dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|C:\\Users\\linda\\source\\Repos\\DIP-MDI\\dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|C:\\Users\\linda\\source\\Repos\\DIP-MDI\\dip\\cbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\cbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,50 +50,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HForm.cs",
-              "DocumentMoniker": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\HForm.cs",
-              "RelativeDocumentMoniker": "DIP\\HForm.cs",
-              "ToolTip": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\HForm.cs",
-              "RelativeToolTip": "DIP\\HForm.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAuwBoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T08:00:48.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HForm.cs [\u8A2D\u8A08]",
-              "DocumentMoniker": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\HForm.cs",
-              "RelativeDocumentMoniker": "DIP\\HForm.cs",
-              "ToolTip": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\HForm.cs [\u8A2D\u8A08]",
-              "RelativeToolTip": "DIP\\HForm.cs [\u8A2D\u8A08]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T08:00:03.732Z",
-              "EditorCaption": " [\u8A2D\u8A08]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "DIPSample.cs",
               "DocumentMoniker": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\DIPSample.cs",
               "RelativeDocumentMoniker": "DIP\\DIPSample.cs",
               "ToolTip": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\DIPSample.cs",
               "RelativeToolTip": "DIP\\DIPSample.cs",
-              "ViewState": "AgIAAMIBAAAAAAAAAAAIwNsBAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAPABAAAAAAAAAAAwwP4BAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T11:02:56.402Z"
+              "WhenOpened": "2025-03-16T11:02:56.402Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "pch.cpp",
               "DocumentMoniker": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\B11223210\\pch.cpp",
               "RelativeDocumentMoniker": "B11223210\\pch.cpp",
               "ToolTip": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\B11223210\\pch.cpp",
               "RelativeToolTip": "B11223210\\pch.cpp",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGwAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAwwKEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-16T09:46:42.698Z",
               "EditorCaption": ""
@@ -117,36 +77,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CBForm.cs [\u8A2D\u8A08]",
-              "DocumentMoniker": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\CBForm.cs",
-              "RelativeDocumentMoniker": "DIP\\CBForm.cs",
-              "ToolTip": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\CBForm.cs [\u8A2D\u8A08]",
-              "RelativeToolTip": "DIP\\CBForm.cs [\u8A2D\u8A08]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T12:49:33.534Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "DIPSample.cs [\u8A2D\u8A08]",
               "DocumentMoniker": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\DIPSample.cs",
               "RelativeDocumentMoniker": "DIP\\DIPSample.cs",
               "ToolTip": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\DIPSample.cs [\u8A2D\u8A08]",
               "RelativeToolTip": "DIP\\DIPSample.cs [\u8A2D\u8A08]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T16:13:00.063Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CBForm.cs",
-              "DocumentMoniker": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\CBForm.cs",
-              "RelativeDocumentMoniker": "DIP\\CBForm.cs",
-              "ToolTip": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\CBForm.cs",
-              "RelativeToolTip": "DIP\\CBForm.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAEwAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T12:49:35.096Z"
+              "WhenOpened": "2025-03-13T16:13:00.063Z",
+              "EditorCaption": " [\u8A2D\u8A08]"
             }
           ]
         }
