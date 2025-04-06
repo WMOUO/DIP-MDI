@@ -542,6 +542,26 @@ namespace DIP
             childForm.Show();
         }
 
+
+        private void 大小及角度ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int[] f;
+            int[] g;
+            
+            foreach (MSForm cF in MdiChildren)
+            {
+                if (cF.Focused)
+                {
+                    VForm childForm = new VForm();
+                    childForm.MdiParent = this;
+                    childForm.pf1 = toolStripStatusLabel1;
+                    childForm.pf2 = toolStripStatusLabel2;
+                    childForm.pBitmap = cF.pBitmap;
+                    childForm.Show();
+                }
+            }
+        }
+
         private void fileToolStripMenuItem_Click(object sender, EventArgs e)
         {
 

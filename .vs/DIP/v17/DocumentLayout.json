@@ -1,18 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\",
+  "WorkspaceRootPath": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|C:\\Users\\linda\\source\\Repos\\DIP-MDI\\dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|d:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\dip-mdi\\dip\\vform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\vform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|d:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\dip-mdi\\dip\\msform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\msform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|d:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\dip-mdi\\dip\\vform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\vform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|d:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\dip-mdi\\dip\\vform1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\vform1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|d:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\dip-mdi\\dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F1D8AEE-5AB1-4CC1-9EE4-68A4ECF266F9}|B11223210\\B11223210.vcxproj|C:\\Users\\linda\\source\\Repos\\DIP-MDI\\B11223210\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{8F1D8AEE-5AB1-4CC1-9EE4-68A4ECF266F9}|B11223210\\B11223210.vcxproj|D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\B11223210\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8F1D8AEE-5AB1-4CC1-9EE4-68A4ECF266F9}|B11223210\\B11223210.vcxproj|solutionrelative:B11223210\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|C:\\Users\\linda\\source\\Repos\\DIP-MDI\\dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,42 +65,97 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "MSForm.cs",
+              "DocumentMoniker": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\MSForm.cs",
+              "RelativeDocumentMoniker": "DIP\\MSForm.cs",
+              "ToolTip": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\MSForm.cs",
+              "RelativeToolTip": "DIP\\MSForm.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwBYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T10:44:19.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VForm1.Designer.cs",
+              "DocumentMoniker": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\VForm1.Designer.cs",
+              "RelativeDocumentMoniker": "DIP\\VForm1.Designer.cs",
+              "ToolTip": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\VForm1.Designer.cs",
+              "RelativeToolTip": "DIP\\VForm1.Designer.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAuwIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T10:33:57.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VForm1.cs",
+              "DocumentMoniker": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\VForm1.cs",
+              "RelativeDocumentMoniker": "DIP\\VForm1.cs",
+              "ToolTip": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\VForm1.cs",
+              "RelativeToolTip": "DIP\\VForm1.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAuwKQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T10:01:16.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VForm1.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\VForm1.cs",
+              "RelativeDocumentMoniker": "DIP\\VForm1.cs",
+              "ToolTip": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\VForm1.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "DIP\\VForm1.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T10:00:19.102Z",
+              "EditorCaption": " [\u8A2D\u8A08]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "DIPSample.cs",
-              "DocumentMoniker": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\DIPSample.cs",
+              "DocumentMoniker": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\DIPSample.cs",
               "RelativeDocumentMoniker": "DIP\\DIPSample.cs",
-              "ToolTip": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\DIPSample.cs",
+              "ToolTip": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\DIPSample.cs",
               "RelativeToolTip": "DIP\\DIPSample.cs",
-              "ViewState": "AgIAAPABAAAAAAAAAAAwwP4BAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAiwGAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-16T11:02:56.402Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "pch.cpp",
-              "DocumentMoniker": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\B11223210\\pch.cpp",
-              "RelativeDocumentMoniker": "B11223210\\pch.cpp",
-              "ToolTip": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\B11223210\\pch.cpp",
-              "RelativeToolTip": "B11223210\\pch.cpp",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAKEAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-16T09:46:42.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "DIPSample.cs [\u8A2D\u8A08]",
-              "DocumentMoniker": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\DIPSample.cs",
+              "DocumentMoniker": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\DIPSample.cs",
               "RelativeDocumentMoniker": "DIP\\DIPSample.cs",
-              "ToolTip": "C:\\Users\\linda\\source\\Repos\\DIP-MDI\\DIP\\DIPSample.cs [\u8A2D\u8A08]",
+              "ToolTip": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\DIP\\DIPSample.cs [\u8A2D\u8A08]",
               "RelativeToolTip": "DIP\\DIPSample.cs [\u8A2D\u8A08]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T16:13:00.063Z",
               "EditorCaption": " [\u8A2D\u8A08]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "pch.cpp",
+              "DocumentMoniker": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\B11223210\\pch.cpp",
+              "RelativeDocumentMoniker": "B11223210\\pch.cpp",
+              "ToolTip": "D:\\\u96F2\u6797\u79D1\u6280\u5927\u5B78\\\u6578\u4F4D\u5F71\u50CF\u8655\u7406\\\u671F\u672B\u5C08\u6848\\DIP-MDI\\B11223210\\pch.cpp",
+              "RelativeToolTip": "B11223210\\pch.cpp",
+              "ViewState": "AgIAANEAAAAAAAAAAAAiwOAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-16T09:46:42.698Z",
+              "EditorCaption": ""
             }
           ]
         }
