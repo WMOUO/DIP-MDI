@@ -174,3 +174,4 @@ C:\Users\vivi4\Desktop\DIP-MDI\DIP\obj\x86\Debug\DIP.csproj.GenerateResource.cac
 C:\Users\vivi4\Desktop\DIP-MDI\DIP\obj\x86\Debug\DIP.csproj.CoreCompileInputs.cache
 C:\Users\vivi4\Desktop\DIP-MDI\DIP\obj\x86\Debug\DIP.exe
 C:\Users\vivi4\Desktop\DIP-MDI\DIP\obj\x86\Debug\DIP.pdb
+D:\雲林科技大學\數位影像處理\期末專案\DIP-MDI\DIP\obj\x86\Debug\DIP.VForm.resources

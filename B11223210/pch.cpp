@@ -180,4 +180,98 @@ extern "C" {
 			}
 		}
 	}
+	__declspec(dllexport)void turn(int* f0, int w, int h, int* g0, double theta, int newW, int newH)
+
+	{
+		const double pi = 3.14159265358979323846;
+		if (fabs(theta) < 1e-6 || fabs(theta - 2 * pi) < 1e-6)
+		{
+			for (int i = 0; i < w * h; ++i)
+				g0[i] = f0[i];
+			return;
+		}
+
+		int cx = w / 2;
+		int cy = h / 2;
+		int ncx = newW / 2;
+		int ncy = newH / 2;
+
+		double cos_theta = cos(theta);
+		double sin_theta = sin(theta);
+
+		for (int y = 0; y < newH; ++y)
+		{
+			for (int x = 0; x < newW; ++x)
+			{
+				double srcX = (x - ncx) * cos_theta + (y - ncy) * sin_theta + cx;
+				double srcY = -(x - ncx) * sin_theta + (y - ncy) * cos_theta + cy;
+
+				int idx = y * newW + x;
+
+				if (srcX >= 0 && srcX < w - 1 && srcY >= 0 && srcY < h - 1)
+				{
+					int x0 = (int)floor(srcX);
+					int y0 = (int)floor(srcY);
+					double dx = srcX - x0;
+					double dy = srcY - y0;
+
+					int p00 = f0[y0 * w + x0];
+					int p10 = f0[y0 * w + (x0 + 1)];
+					int p01 = f0[(y0 + 1) * w + x0];
+					int p11 = f0[(y0 + 1) * w + (x0 + 1)];
+
+					double pixel =
+						(1 - dx) * (1 - dy) * p00 +
+						dx * (1 - dy) * p10 +
+						(1 - dx) * dy * p01 +
+						dx * dy * p11;
+
+					g0[idx] = (int)(pixel + 0.5);
+				}
+				else
+				{
+					g0[idx] = 255;
+				}
+			}
+		}
+	}
+
+	__declspec(dllexport) void changeSize(int* f0, int w, int h, int* g0, double scale, int newW, int newH)
+	{
+		for (int y = 0; y < newH; ++y)
+		{
+			for (int x = 0; x < newW; ++x)
+			{
+				double srcX = x / scale;
+				double srcY = y / scale;
+
+				int x0 = (int)floor(srcX);
+				int y0 = (int)floor(srcY);
+				double dx = srcX - x0;
+				double dy = srcY - y0;
+
+				int idx = y * newW + x;
+
+				if (x0 >= 0 && x0 + 1 < w && y0 >= 0 && y0 + 1 < h)
+				{
+					int p00 = f0[y0 * w + x0];
+					int p10 = f0[y0 * w + (x0 + 1)];
+					int p01 = f0[(y0 + 1) * w + x0];
+					int p11 = f0[(y0 + 1) * w + (x0 + 1)];
+
+					double pixel =
+						(1 - dx) * (1 - dy) * p00 +
+						dx * (1 - dy) * p10 +
+						(1 - dx) * dy * p01 +
+						dx * dy * p11;
+
+					g0[idx] = (int)(pixel + 0.5);
+				}
+				else
+				{
+					g0[idx] = 255;
+				}
+			}
+		}
+	}
 }
