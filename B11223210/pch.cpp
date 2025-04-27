@@ -274,4 +274,70 @@ extern "C" {
 			}
 		}
 	}
+
+	__declspec(dllexport)void Otsu_cut(int* f0, int w, int h, int* g0) {
+		int gray[256] = { 0 };
+		for (int i = 0; i < w * h; i++)
+			gray[f0[i]]++;
+
+		double prob[256] = { 0 }, levels[256] = { 0 };
+		for (int i = 0; i < 256; i++) {
+			prob[i] = (double)gray[i] / (w * h);
+			levels[i] = i;
+		}
+
+		double max_between_var = 0, min_within_var = 1e9, max_avg_diff = 0;
+		int best_thresh_otsu = 0, best_thresh_within = 0, best_thresh_avg = 0;
+
+		for (int t = 1; t < 256; ++t) {
+			double w0 = 0, mu0 = 0;
+			for (int i = 0; i < t; ++i) {
+				w0 += prob[i];
+				mu0 += levels[i] * prob[i];
+			}
+			if (w0 == 0) continue;
+			mu0 /= w0;
+
+			double w1 = 1 - w0;
+			if (w1 == 0) continue;
+
+			double mu1 = 0;
+			for (int i = t; i < 256; ++i) {
+				mu1 += levels[i] * prob[i];
+			}
+			mu1 /= w1;
+
+			double between_var = w0 * w1 * (mu0 - mu1) * (mu0 - mu1);
+			if (between_var > max_between_var) {
+				max_between_var = between_var;
+				best_thresh_otsu = t;
+			}
+
+			double sigma0 = 0, sigma1 = 0;
+			for (int i = 0; i < t; ++i) {
+				sigma0 += prob[i] * (levels[i] - mu0) * (levels[i] - mu0);
+			}
+			sigma0 /= w0;
+
+			for (int i = t; i < 256; ++i) {
+				sigma1 += prob[i] * (levels[i] - mu1) * (levels[i] - mu1);
+			}
+			sigma1 /= w1;
+
+			double within_var = w0 * sigma0 + w1 * sigma1;
+			if (within_var < min_within_var) {
+				min_within_var = within_var;
+				best_thresh_within = t;
+			}
+
+			double avg_diff = abs(mu0 - mu1);
+			if (avg_diff > max_avg_diff) {
+				max_avg_diff = avg_diff;
+				best_thresh_avg = t;
+			}
+		}
+
+		for (int i = 0; i < w * h; i++)
+			g0[i] = (f0[i] < best_thresh_otsu) ? 0 : 255;
+	}
 }
