@@ -45,6 +45,8 @@ namespace DIP
         unsafe public static extern void average_filter(int* f0, int w, int h, int* g0, int* k0, double* m);
         [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
         unsafe public static extern void gaussian_filter(int* f0, int w, int h, int* g0, int* k0);
+        [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
+        unsafe public static extern void Otsu_cut(int* f0, int w, int h, int* g0);
 
         Bitmap NpBitmap;
         int[] f;
@@ -562,9 +564,32 @@ namespace DIP
             }
         }
 
-        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        private void otsu切割ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            int[] f;
+            int[] g = new int[w * h]; ;
+            foreach (MSForm cF in MdiChildren)
+            {
+                if (cF.Focused)
+                {
+                    f = bmp2array(cF.pBitmap);
+                    unsafe
+                    {
+                        fixed (int* f0 = f) fixed (int* g0 = g)
+                        {
+                            Otsu_cut(f0, w, h, g0);
+                        }
+                    }
+                    NpBitmap = array2bmp(g);
+                    break;
+                }
+            }
+            MSForm childForm = new MSForm();
+            childForm.MdiParent = this;
+            childForm.pf1 = toolStripStatusLabel1;
+            childForm.pf2 = toolStripStatusLabel2;
+            childForm.pBitmap = NpBitmap;
+            childForm.Show();
         }
 
     }
