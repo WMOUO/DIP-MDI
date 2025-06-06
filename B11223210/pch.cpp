@@ -78,11 +78,20 @@ extern "C" {
 			}
 	}
 	__declspec(dllexport)void color_change(int* f0, int w, int h, int* g0, int a, int b) {
-		double c = a / 100.0+1;
+		float c = a / 1000.0;
 		for (int i = 0; i < w * h; i++) {
 			g0[i] = c * (f0[i] - 128) + 128 + b;
-			if (g0[i] > 255)g0[i] = 255;
-			if (g0[i] < 0)g0[i] = 0;
+			float u = 0.128 * (a - 1000);
+			if (a >= 1000) {
+				if (g0[i] >= 256 - u)
+					g0[i] = 255;
+				else if (g0[i] <= u)
+					g0[i] = 0;
+			}
+			else {
+				if (g0[i] <= 128 - u)
+					g0[i] = 128;
+			}
 		}
 	}
 	__declspec(dllexport)void Histograms(int* f0, int w, int h, double* c0) {

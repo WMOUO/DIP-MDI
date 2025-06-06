@@ -190,3 +190,4 @@ C:\Users\linda\source\Repos\影像處理\20250406\DIP\obj\x86\Debug\DIP.csproj.G
 C:\Users\linda\source\Repos\影像處理\20250406\DIP\obj\x86\Debug\DIP.csproj.CoreCompileInputs.cache
 C:\Users\linda\source\Repos\影像處理\20250406\DIP\obj\x86\Debug\DIP.exe
 C:\Users\linda\source\Repos\影像處理\20250406\DIP\obj\x86\Debug\DIP.pdb
+C:\Users\linda\source\Repos\DIP-MDI\DIP\obj\x86\Debug\DIP.VForm.resources
