@@ -1,5 +1,6 @@
 ﻿#include "pch.h"
 #include <cmath>
+#include <algorithm>
 
 extern "C" {
 	__declspec(dllexport)void encode(int* f0, int w, int h, int* g0)
@@ -284,7 +285,7 @@ extern "C" {
 		}
 	}
 
-	__declspec(dllexport)void Otsu_cut(int* f0, int w, int h, int* g0) {
+	__declspec(dllexport)void Otsu_cut(int* f0, int w, int h, int* g0, int* n0) {
 		int gray[256] = { 0 };
 		for (int i = 0; i < w * h; i++)
 			gray[f0[i]]++;
@@ -346,7 +347,93 @@ extern "C" {
 			}
 		}
 
+		n0[0] = best_thresh_otsu;
+
 		for (int i = 0; i < w * h; i++)
 			g0[i] = (f0[i] < best_thresh_otsu) ? 0 : 255;
+	}
+	__declspec(dllexport)void median_filter(int* f0, int w, int h, int* g0, int* k0)
+	{
+		for (int i = 1; i < h; i++) {
+			for (int j = 1; j < w; j++) {
+				k0[j + i * h] = f0[(j - 1) + (i - 1) * h];
+			}
+		}
+		for (int k = 0; k < h; k++) {
+			for (int p = 0; p < w; p++) {
+				double window[9];
+				int idx = 0;
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+						int u = j + p;
+						int b = i + k;
+						window[idx++] = k0[u + b * h];
+					}
+				}
+				std::sort(window, window + 9);
+				g0[p + k * h] = window[4];
+			}
+		}
+	}
+	__declspec(dllexport)void sobel_filter(int* f0, int w, int h, int* g0, int* k0) {
+		for (int i = 1; i < h; i++) {
+			for (int j = 1; j < w; j++) {
+				k0[j + i * h] = f0[(j - 1) + (i - 1) * h];
+			}
+		}
+		double Gx[9] = { -1, 0, 1,
+						-2, 0, 2,
+						-1, 0, 1 };
+		double Gy[9] = { -1, -2, -1,
+						 0,  0,  0,
+						 1,  2,  1 };
+
+		for (int k = 1; k < h - 1; k++) {
+			for (int p = 1; p < w - 1; p++) {
+				double sumX = 0;
+				double sumY = 0;
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+						int u = p + j - 1;
+						int b = k + i - 1;
+						sumX += f0[u + b * h] * Gx[j + i * 3];
+						sumY += f0[u + b * h] * Gy[j + i * 3];
+					}
+				}
+				double mag = sqrt(sumX * sumX + sumY * sumY);
+				if (mag > 255) mag = 255;  // 限制最大值
+				g0[p + k * h] = round(mag);
+			}
+		}
+	}
+	__declspec(dllexport)void prewitt_filter(int* f0, int w, int h, int* g0, int* k0) {
+		for (int i = 1; i < h; i++) {
+			for (int j = 1; j < w; j++) {
+				k0[j + i * h] = f0[(j - 1) + (i - 1) * h];
+			}
+		}
+		double Gx[9] = { -1, 0, 1,
+						-1, 0, 1,
+						-1, 0, 1 };
+		double Gy[9] = { -1, -1, -1,
+						 0,  0,  0,
+						 1,  1,  1 };
+
+		for (int k = 0; k < h; k++) {
+			for (int p = 0; p < w; p++) {
+				double sumX = 0;
+				double sumY = 0;
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+						int u = j + p;
+						int b = i + k;
+						sumX += k0[u + b * h] * Gx[j + i * 3];
+						sumY += k0[u + b * h] * Gy[j + i * 3];
+					}
+				}
+				double mag = sqrt(sumX * sumX + sumY * sumY);
+				g0[p + k * h] = round(mag);
+			}
+		}
 	}
 }

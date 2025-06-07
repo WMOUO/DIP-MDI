@@ -46,7 +46,13 @@ namespace DIP
         [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
         unsafe public static extern void gaussian_filter(int* f0, int w, int h, int* g0, int* k0);
         [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
-        unsafe public static extern void Otsu_cut(int* f0, int w, int h, int* g0);
+        unsafe public static extern void Otsu_cut(int* f0, int w, int h, int* g0, int* n0);
+        [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
+        unsafe public static extern void median_filter(int* f0, int w, int h, int* g0, int* k0);
+        [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
+        unsafe public static extern void sobel_filter(int* f0, int w, int h, int* g0, int* k0);
+        [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
+        unsafe public static extern void prewitt_filter(int* f0, int w, int h, int* g0, int* k0);
 
         Bitmap NpBitmap;
         int[] f;
@@ -564,10 +570,11 @@ namespace DIP
             }
         }
 
-        private void otsu切割ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void 中值濾波ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int[] f;
-            int[] g = new int[w * h]; ;
+            int[] g = new int[w * h];
+            int[] k = new int[(w + 1) * (h + 1)];
             foreach (MSForm cF in MdiChildren)
             {
                 if (cF.Focused)
@@ -575,9 +582,9 @@ namespace DIP
                     f = bmp2array(cF.pBitmap);
                     unsafe
                     {
-                        fixed (int* f0 = f) fixed (int* g0 = g)
+                        fixed (int* f0 = f) fixed (int* g0 = g) fixed (int* k0 = k)
                         {
-                            Otsu_cut(f0, w, h, g0);
+                            median_filter(f0, w, h, g0, k0);
                         }
                     }
                     NpBitmap = array2bmp(g);
@@ -586,6 +593,94 @@ namespace DIP
             }
             MSForm childForm = new MSForm();
             childForm.MdiParent = this;
+            childForm.pf1 = toolStripStatusLabel1;
+            childForm.pf2 = toolStripStatusLabel2;
+            childForm.pBitmap = NpBitmap;
+            childForm.Show();
+        }
+
+        private void sobel邊緣偵測ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int[] f;
+            int[] g = new int[w * h];
+            int[] k = new int[(w + 1) * (h + 1)];
+            foreach (MSForm cF in MdiChildren)
+            {
+                if (cF.Focused)
+                {
+                    f = bmp2array(cF.pBitmap);
+                    unsafe
+                    {
+                        fixed (int* f0 = f) fixed (int* g0 = g) fixed (int* k0 = k)
+                        {
+                            sobel_filter(f0, w, h, g0, k0);
+                        }
+                    }
+                    NpBitmap = array2bmp(g);
+                    break;
+                }
+            }
+            MSForm childForm = new MSForm();
+            childForm.MdiParent = this;
+            childForm.pf1 = toolStripStatusLabel1;
+            childForm.pf2 = toolStripStatusLabel2;
+            childForm.pBitmap = NpBitmap;
+            childForm.Show();
+        }
+
+        private void prewitt邊緣偵測ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int[] f;
+            int[] g = new int[w * h];
+            int[] k = new int[(w + 1) * (h + 1)];
+            foreach (MSForm cF in MdiChildren)
+            {
+                if (cF.Focused)
+                {
+                    f = bmp2array(cF.pBitmap);
+                    unsafe
+                    {
+                        fixed (int* f0 = f) fixed (int* g0 = g) fixed (int* k0 = k)
+                        {
+                            prewitt_filter(f0, w, h, g0, k0);
+                        }
+                    }
+                    NpBitmap = array2bmp(g);
+                    break;
+                }
+            }
+            MSForm childForm = new MSForm();
+            childForm.MdiParent = this;
+            childForm.pf1 = toolStripStatusLabel1;
+            childForm.pf2 = toolStripStatusLabel2;
+            childForm.pBitmap = NpBitmap;
+            childForm.Show();
+        }
+
+        private void otsu切割ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int[] f;
+            int[] g = new int[w * h];
+            int[] n = new int[1];
+            foreach (MSForm cF in MdiChildren)
+            {
+                if (cF.Focused)
+                {
+                    f = bmp2array(cF.pBitmap);
+                    unsafe
+                    {
+                        fixed (int* f0 = f) fixed (int* g0 = g) fixed (int* n0 = n)
+                        {
+                            Otsu_cut(f0, w, h, g0,n0);
+                        }
+                    }
+                    NpBitmap = array2bmp(g);
+                    break;
+                }
+            }
+            MSForm childForm = new MSForm();
+            childForm.MdiParent = this;
+            childForm.Text = n[0].ToString();
             childForm.pf1 = toolStripStatusLabel1;
             childForm.pf2 = toolStripStatusLabel2;
             childForm.pBitmap = NpBitmap;

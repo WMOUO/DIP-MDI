@@ -52,11 +52,14 @@
             this.濾波器ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.平均濾波ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.高斯濾波ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.otsu切割ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.影像調整ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.大小及角度ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oFileDlg = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.otsu切割ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.中值濾波ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobel邊緣偵測ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.prewitt邊緣偵測ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -241,7 +244,10 @@
             this.濾波器ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.平均濾波ToolStripMenuItem,
             this.高斯濾波ToolStripMenuItem,
-            this.otsu切割ToolStripMenuItem});
+            this.otsu切割ToolStripMenuItem,
+            this.中值濾波ToolStripMenuItem,
+            this.sobel邊緣偵測ToolStripMenuItem,
+            this.prewitt邊緣偵測ToolStripMenuItem});
             this.濾波器ToolStripMenuItem.Name = "濾波器ToolStripMenuItem";
             this.濾波器ToolStripMenuItem.Size = new System.Drawing.Size(105, 38);
             this.濾波器ToolStripMenuItem.Text = "濾波器";
@@ -260,6 +266,13 @@
             this.高斯濾波ToolStripMenuItem.Text = "高斯濾波";
             this.高斯濾波ToolStripMenuItem.Click += new System.EventHandler(this.高斯濾波ToolStripMenuItem_Click);
             // 
+            // otsu切割ToolStripMenuItem
+            // 
+            this.otsu切割ToolStripMenuItem.Name = "otsu切割ToolStripMenuItem";
+            this.otsu切割ToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.otsu切割ToolStripMenuItem.Text = "Otsu\'s Method";
+            this.otsu切割ToolStripMenuItem.Click += new System.EventHandler(this.otsu切割ToolStripMenuItem_Click);
+            // 
             // 影像調整ToolStripMenuItem
             // 
             this.影像調整ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -271,7 +284,7 @@
             // 大小及角度ToolStripMenuItem
             // 
             this.大小及角度ToolStripMenuItem.Name = "大小及角度ToolStripMenuItem";
-            this.大小及角度ToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.大小及角度ToolStripMenuItem.Size = new System.Drawing.Size(265, 44);
             this.大小及角度ToolStripMenuItem.Text = "大小及角度";
             this.大小及角度ToolStripMenuItem.Click += new System.EventHandler(this.大小及角度ToolStripMenuItem_Click);
             // 
@@ -279,12 +292,26 @@
             // 
             this.oFileDlg.FileName = "openFileDialog1";
             // 
-            // otsu切割ToolStripMenuItem
+            // 中值濾波ToolStripMenuItem
             // 
-            this.otsu切割ToolStripMenuItem.Name = "otsu切割ToolStripMenuItem";
-            this.otsu切割ToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
-            this.otsu切割ToolStripMenuItem.Text = "Otsu\'s Method";
-            this.otsu切割ToolStripMenuItem.Click += new System.EventHandler(this.otsu切割ToolStripMenuItem_Click);
+            this.中值濾波ToolStripMenuItem.Name = "中值濾波ToolStripMenuItem";
+            this.中值濾波ToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.中值濾波ToolStripMenuItem.Text = "中值濾波";
+            this.中值濾波ToolStripMenuItem.Click += new System.EventHandler(this.中值濾波ToolStripMenuItem_Click);
+            // 
+            // sobel邊緣偵測ToolStripMenuItem
+            // 
+            this.sobel邊緣偵測ToolStripMenuItem.Name = "sobel邊緣偵測ToolStripMenuItem";
+            this.sobel邊緣偵測ToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.sobel邊緣偵測ToolStripMenuItem.Text = "Sobel邊緣偵測";
+            this.sobel邊緣偵測ToolStripMenuItem.Click += new System.EventHandler(this.sobel邊緣偵測ToolStripMenuItem_Click);
+            // 
+            // prewitt邊緣偵測ToolStripMenuItem
+            // 
+            this.prewitt邊緣偵測ToolStripMenuItem.Name = "prewitt邊緣偵測ToolStripMenuItem";
+            this.prewitt邊緣偵測ToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.prewitt邊緣偵測ToolStripMenuItem.Text = "Prewitt邊緣偵測";
+            this.prewitt邊緣偵測ToolStripMenuItem.Click += new System.EventHandler(this.prewitt邊緣偵測ToolStripMenuItem_Click);
             // 
             // DIPSample
             // 
@@ -294,7 +321,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "DIPSample";
             this.Text = "DIPSample";
             this.Load += new System.EventHandler(this.DIPSample_Load);
@@ -338,5 +365,8 @@
         private System.Windows.Forms.ToolStripMenuItem 影像調整ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 大小及角度ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem otsu切割ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 中值濾波ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sobel邊緣偵測ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem prewitt邊緣偵測ToolStripMenuItem;
     }
 }
