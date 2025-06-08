@@ -657,6 +657,12 @@ namespace DIP
             childForm.Show();
         }
 
+        private void 關於ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Info info = new Info();
+            info.Show();
+        }
+
         private void otsu切割ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int[] f;
