@@ -81,7 +81,8 @@ namespace DIP
             x = Math.Max(0, Math.Min(x, pBitmap.Width - 1));
             y = Math.Max(0, Math.Min(y, pBitmap.Height - 1));
             Color pixel = pBitmap.GetPixel(x, y);
-            pf1.Text = "座標："+"(" + e.X + "," + e.Y + ")";
+            pf1.Text = $"(Width,Height) = ({pBitmap.Width},{pBitmap.Height})　";
+            pf1.Text += "座標："+"(" + e.X + "," + e.Y + ")";
             double brightness = locationWithLight(pixel.R, pixel.G, pixel.B);
             pf2.Text = "亮度：" + brightness.ToString();
         }
