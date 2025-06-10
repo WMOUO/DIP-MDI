@@ -1,12 +1,12 @@
 ﻿  pch.cpp
-C:\Users\linda\source\Repos\DIP-MDI\B11223210\pch.cpp(82,11): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-C:\Users\linda\source\Repos\DIP-MDI\B11223210\pch.cpp(84,36): warning C4244: '=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\linda\source\Repos\DIP-MDI\B11223210\pch.cpp(85,12): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-C:\Users\linda\source\Repos\DIP-MDI\B11223210\pch.cpp(118,18): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\linda\source\Repos\DIP-MDI\B11223210\pch.cpp(162,26): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\linda\source\Repos\DIP-MDI\B11223210\pch.cpp(188,26): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\linda\source\Repos\DIP-MDI\B11223210\pch.cpp(374,29): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\linda\source\Repos\DIP-MDI\B11223210\pch.cpp(405,26): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\linda\source\Repos\DIP-MDI\B11223210\pch.cpp(435,26): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\vivi4\Desktop\DIP-MDI\B11223210\pch.cpp(84,11): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+C:\Users\vivi4\Desktop\DIP-MDI\B11223210\pch.cpp(86,36): warning C4244: '=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\vivi4\Desktop\DIP-MDI\B11223210\pch.cpp(87,12): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+C:\Users\vivi4\Desktop\DIP-MDI\B11223210\pch.cpp(120,18): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\vivi4\Desktop\DIP-MDI\B11223210\pch.cpp(164,26): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\vivi4\Desktop\DIP-MDI\B11223210\pch.cpp(190,26): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\vivi4\Desktop\DIP-MDI\B11223210\pch.cpp(376,29): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\vivi4\Desktop\DIP-MDI\B11223210\pch.cpp(407,26): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\vivi4\Desktop\DIP-MDI\B11223210\pch.cpp(437,26): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
   dllmain.cpp
-  B11223210.vcxproj -> C:\Users\linda\source\Repos\DIP-MDI\Debug\B11223210.dll
+  B11223210.vcxproj -> C:\Users\vivi4\Desktop\DIP-MDI\Debug\B11223210.dll

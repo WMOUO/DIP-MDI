@@ -1,6 +1,8 @@
 ﻿#include "pch.h"
 #include <cmath>
 #include <algorithm>
+#include <vector>
+using namespace std;
 
 extern "C" {
 	__declspec(dllexport)void encode(int* f0, int w, int h, int* g0)
@@ -436,4 +438,53 @@ extern "C" {
 			}
 		}
 	}
+
+	__declspec(dllexport)void connected_component(int* f0, int w, int h,int* g0,int* num) {
+		typedef struct {
+			int x, y;
+		} Point;
+
+		Point queue[256*256];
+		int front = 0, rear = 0;
+		int label = 1;
+		int dx[4] = { -1, 1, 0, 0 };
+		int dy[4] = { 0, 0, -1, 1 };
+
+		for (int i = 0; i < w * h; i++) {
+			g0[i] = 0;
+		}
+		for (int y = 0; y < h; y++) {
+			for (int x = 0; x < w; x++) {
+				if (f0[y * w + x] > 0 && g0[y * w + x] == 0) {
+					front = rear = 0;
+					if (rear < w*h) {
+						queue[rear].x = x;
+						queue[rear].y = y;
+						rear++;
+					}
+					g0[y * w + x] = label;
+					while (!(front == rear)) {
+						Point p = queue[front++];
+						for (int d = 0; d < 4; ++d) {
+							int nx = p.x + dx[d];
+							int ny = p.y + dy[d];
+							if (nx >= 0 && nx < w && ny >= 0 && ny < h) {
+								if (f0[nx + ny*w] == 255 && g0[nx + ny*w] == 0) {
+									g0[nx + ny*w] = label;
+									if (rear < w*h) {
+										queue[rear].x = nx;
+										queue[rear].y = ny;
+										rear++;
+									}
+								}
+							}
+						}
+					}
+					num[0] = label;
+					label++;
+				}
+			}
+		}
+	}
+
 }

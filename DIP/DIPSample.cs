@@ -38,7 +38,7 @@ namespace DIP
         [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
         unsafe public static extern void Histograms(int* f0, int w, int h, double* c0);
         [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
-        unsafe public static extern void Histograms_Equalization(int* f0, int w, int h,int* g0, double* c0, double* k0);
+        unsafe public static extern void Histograms_Equalization(int* f0, int w, int h, int* g0, double* c0, double* k0);
         [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
         unsafe public static extern void negative(int* f0, int w, int h, int* g0);
         [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
@@ -53,6 +53,8 @@ namespace DIP
         unsafe public static extern void sobel_filter(int* f0, int w, int h, int* g0, int* k0);
         [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
         unsafe public static extern void prewitt_filter(int* f0, int w, int h, int* g0, int* k0);
+        [DllImport("B11223210.dll", CallingConvention = CallingConvention.Cdecl)]
+        unsafe public static extern void connected_component(int* f0, int w, int h, int* g0,int* num);
 
         Bitmap NpBitmap;
         int[] f;
@@ -64,7 +66,7 @@ namespace DIP
             this.IsMdiContainer = true;
             this.WindowState = FormWindowState.Maximized;
             this.toolStripStatusLabel1.Text = "";
-			this.toolStripStatusLabel2.Text = "";
+            this.toolStripStatusLabel2.Text = "";
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -157,19 +159,21 @@ namespace DIP
 
         private void rGBtoGrayToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int []f;
-            int []g;
+            int[] f;
+            int[] g;
             foreach (MSForm cF in MdiChildren)
-			{
+            {
                 if (cF.Focused)
                 {
                     f = new int[w * h * 3];
                     g = new int[w * h];
-                    for (int i = 0; i < w; i++) {
-                        for (int j = 0; j < h; j++) {
+                    for (int i = 0; i < w; i++)
+                    {
+                        for (int j = 0; j < h; j++)
+                        {
                             Color c = cF.pBitmap.GetPixel(i, j);
-                            int idx = (i + j*w) * 3;
-                            f[idx]= c.R; f[idx+1] = c.G; f[idx + 2] = c.B;
+                            int idx = (i + j * w) * 3;
+                            f[idx] = c.R; f[idx + 1] = c.G; f[idx + 2] = c.B;
                         }
                     }
                     unsafe
@@ -182,13 +186,13 @@ namespace DIP
                     NpBitmap = array2bmp(g);
                     break;
                 }
-			}
-			MSForm childForm = new MSForm();
-	        childForm.MdiParent = this;
+            }
+            MSForm childForm = new MSForm();
+            childForm.MdiParent = this;
             childForm.pf1 = toolStripStatusLabel1;
             childForm.pf2 = toolStripStatusLabel2;
-            childForm.pBitmap = NpBitmap; 
-			childForm.Show();
+            childForm.pBitmap = NpBitmap;
+            childForm.Show();
         }
 
         private void iPToolStripMenuItem_Click(object sender, EventArgs e)
@@ -475,7 +479,7 @@ namespace DIP
                         fixed (int* f0 = f) fixed (int* g0 = g) fixed (double* c0 = c) fixed (double* k0 = k)
                         {
                             Histograms(f0, w, h, c0);
-                            Histograms_Equalization(f0, w, h,g0, c0, k0);
+                            Histograms_Equalization(f0, w, h, g0, c0, k0);
                         }
                     }
                     break;
@@ -555,7 +559,7 @@ namespace DIP
         {
             int[] f;
             int[] g;
-            
+
             foreach (MSForm cF in MdiChildren)
             {
                 if (cF.Focused)
@@ -677,7 +681,7 @@ namespace DIP
                     {
                         fixed (int* f0 = f) fixed (int* g0 = g) fixed (int* n0 = n)
                         {
-                            Otsu_cut(f0, w, h, g0,n0);
+                            Otsu_cut(f0, w, h, g0, n0);
                         }
                     }
                     NpBitmap = array2bmp(g);
@@ -693,5 +697,33 @@ namespace DIP
             childForm.Show();
         }
 
+        private void component(object sender, EventArgs e)
+        {
+            int[] f, g, num = new int[1];
+            FCCForm fcc = new FCCForm();
+            foreach (MSForm cF in MdiChildren)
+            {
+                if (cF.Focused)
+                {
+                    f = bmp2array(cF.pBitmap);
+                    g = new int[w * h];
+                    unsafe
+                    {
+                        fixed (int* f0 = f) fixed (int* g0 = g) fixed (int* n0 = num)
+                        {
+                            connected_component(f0, w, h, g0, n0);
+                        }
+                    }
+                    NpBitmap = array2bmp(f);
+                    fcc.pBitmap = NpBitmap;
+                    fcc.bitmap = array2bmp(g);
+                    break;
+                }
+            }   
+            fcc.dIP = this;
+            fcc.pf1 = toolStripStatusLabel1;           
+            fcc.Text = num[0].ToString();
+            fcc.Show();
+        }
     }
 }
