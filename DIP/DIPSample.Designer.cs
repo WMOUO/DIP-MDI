@@ -46,6 +46,7 @@
             this.旋轉180度ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.垂直翻轉ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.水平翻轉ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.自訂大小及角度ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.分析ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.直方圖ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.直方等化圖ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,15 +56,12 @@
             this.中值濾波ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobel邊緣偵測ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.prewitt邊緣偵測ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.關於ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.oFileDlg = new System.Windows.Forms.OpenFileDialog();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.影像分割ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otsusMethodToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.四連通標記ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.自訂大小及角度ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.圓偵測ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.線偵測ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.關於ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oFileDlg = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -107,7 +105,7 @@
             this.關於ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(986, 34);
+            this.menuStrip1.Size = new System.Drawing.Size(986, 32);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -142,35 +140,35 @@
             // rGBtoGrayToolStripMenuItem
             // 
             this.rGBtoGrayToolStripMenuItem.Name = "rGBtoGrayToolStripMenuItem";
-            this.rGBtoGrayToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.rGBtoGrayToolStripMenuItem.Size = new System.Drawing.Size(236, 34);
             this.rGBtoGrayToolStripMenuItem.Text = "灰階";
             this.rGBtoGrayToolStripMenuItem.Click += new System.EventHandler(this.rGBtoGrayToolStripMenuItem_Click);
             // 
             // 馬賽克ToolStripMenuItem
             // 
             this.馬賽克ToolStripMenuItem.Name = "馬賽克ToolStripMenuItem";
-            this.馬賽克ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.馬賽克ToolStripMenuItem.Size = new System.Drawing.Size(236, 34);
             this.馬賽克ToolStripMenuItem.Text = "馬賽克";
             this.馬賽克ToolStripMenuItem.Click += new System.EventHandler(this.馬賽克ToolStripMenuItem_Click);
             // 
             // 位元切面ToolStripMenuItem
             // 
             this.位元切面ToolStripMenuItem.Name = "位元切面ToolStripMenuItem";
-            this.位元切面ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.位元切面ToolStripMenuItem.Size = new System.Drawing.Size(236, 34);
             this.位元切面ToolStripMenuItem.Text = "位元切面";
             this.位元切面ToolStripMenuItem.Click += new System.EventHandler(this.位元切面ToolStripMenuItem_Click);
             // 
             // 負片ToolStripMenuItem
             // 
             this.負片ToolStripMenuItem.Name = "負片ToolStripMenuItem";
-            this.負片ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.負片ToolStripMenuItem.Size = new System.Drawing.Size(236, 34);
             this.負片ToolStripMenuItem.Text = "負片";
             this.負片ToolStripMenuItem.Click += new System.EventHandler(this.負片ToolStripMenuItem_Click);
             // 
             // 調整亮度和對比ToolStripMenuItem
             // 
             this.調整亮度和對比ToolStripMenuItem.Name = "調整亮度和對比ToolStripMenuItem";
-            this.調整亮度和對比ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.調整亮度和對比ToolStripMenuItem.Size = new System.Drawing.Size(236, 34);
             this.調整亮度和對比ToolStripMenuItem.Text = "調整亮度和對比";
             this.調整亮度和對比ToolStripMenuItem.Click += new System.EventHandler(this.調整亮度和對比ToolStripMenuItem_Click);
             // 
@@ -222,13 +220,18 @@
             this.水平翻轉ToolStripMenuItem.Text = "水平翻轉";
             this.水平翻轉ToolStripMenuItem.Click += new System.EventHandler(this.水平翻轉ToolStripMenuItem_Click);
             // 
+            // 自訂大小及角度ToolStripMenuItem
+            // 
+            this.自訂大小及角度ToolStripMenuItem.Name = "自訂大小及角度ToolStripMenuItem";
+            this.自訂大小及角度ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.自訂大小及角度ToolStripMenuItem.Text = "自訂大小及角度";
+            this.自訂大小及角度ToolStripMenuItem.Click += new System.EventHandler(this.大小及角度ToolStripMenuItem_Click);
+            // 
             // 分析ToolStripMenuItem
             // 
             this.分析ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.直方圖ToolStripMenuItem,
-            this.直方等化圖ToolStripMenuItem,
-            this.圓偵測ToolStripMenuItem,
-            this.線偵測ToolStripMenuItem});
+            this.直方等化圖ToolStripMenuItem});
             this.分析ToolStripMenuItem.Name = "分析ToolStripMenuItem";
             this.分析ToolStripMenuItem.Size = new System.Drawing.Size(62, 28);
             this.分析ToolStripMenuItem.Text = "分析";
@@ -294,17 +297,6 @@
             this.prewitt邊緣偵測ToolStripMenuItem.Text = "Prewitt邊緣偵測";
             this.prewitt邊緣偵測ToolStripMenuItem.Click += new System.EventHandler(this.prewitt邊緣偵測ToolStripMenuItem_Click);
             // 
-            // 關於ToolStripMenuItem
-            // 
-            this.關於ToolStripMenuItem.Name = "關於ToolStripMenuItem";
-            this.關於ToolStripMenuItem.Size = new System.Drawing.Size(62, 28);
-            this.關於ToolStripMenuItem.Text = "關於";
-            this.關於ToolStripMenuItem.Click += new System.EventHandler(this.關於ToolStripMenuItem_Click);
-            // 
-            // oFileDlg
-            // 
-            this.oFileDlg.FileName = "openFileDialog1";
-            // 
             // 影像分割ToolStripMenuItem
             // 
             this.影像分割ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -328,24 +320,16 @@
             this.四連通標記ToolStripMenuItem.Text = "四連通標記";
             this.四連通標記ToolStripMenuItem.Click += new System.EventHandler(this.component);
             // 
-            // 自訂大小及角度ToolStripMenuItem
+            // 關於ToolStripMenuItem
             // 
-            this.自訂大小及角度ToolStripMenuItem.Name = "自訂大小及角度ToolStripMenuItem";
-            this.自訂大小及角度ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.自訂大小及角度ToolStripMenuItem.Text = "自訂大小及角度";
-            this.自訂大小及角度ToolStripMenuItem.Click += new System.EventHandler(this.大小及角度ToolStripMenuItem_Click);
+            this.關於ToolStripMenuItem.Name = "關於ToolStripMenuItem";
+            this.關於ToolStripMenuItem.Size = new System.Drawing.Size(62, 28);
+            this.關於ToolStripMenuItem.Text = "關於";
+            this.關於ToolStripMenuItem.Click += new System.EventHandler(this.關於ToolStripMenuItem_Click);
             // 
-            // 圓偵測ToolStripMenuItem
+            // oFileDlg
             // 
-            this.圓偵測ToolStripMenuItem.Name = "圓偵測ToolStripMenuItem";
-            this.圓偵測ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.圓偵測ToolStripMenuItem.Text = "圓偵測";
-            // 
-            // 線偵測ToolStripMenuItem
-            // 
-            this.線偵測ToolStripMenuItem.Name = "線偵測ToolStripMenuItem";
-            this.線偵測ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.線偵測ToolStripMenuItem.Text = "線偵測";
+            this.oFileDlg.FileName = "openFileDialog1";
             // 
             // DIPSample
             // 
@@ -355,7 +339,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DIPSample";
             this.Text = "DIPSample";
             this.Load += new System.EventHandler(this.DIPSample_Load);
@@ -404,7 +388,5 @@
         private System.Windows.Forms.ToolStripMenuItem otsusMethodToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 四連通標記ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 自訂大小及角度ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 圓偵測ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 線偵測ToolStripMenuItem;
     }
 }

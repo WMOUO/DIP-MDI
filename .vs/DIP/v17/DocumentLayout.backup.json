@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\vivi4\\Desktop\\DIP-MDI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|C:\\Users\\vivi4\\Desktop\\DIP-MDI\\dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|C:\\Users\\vivi4\\Desktop\\DIP-MDI\\dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|c:\\users\\vivi4\\desktop\\dip-mdi\\dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\dipsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F1D8AEE-5AB1-4CC1-9EE4-68A4ECF266F9}|B11223210\\B11223210.vcxproj|C:\\Users\\vivi4\\Desktop\\DIP-MDI\\B11223210\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\msform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|c:\\users\\vivi4\\desktop\\dip-mdi\\dip\\msform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|C:\\Users\\vivi4\\Desktop\\DIP-MDI\\dip\\msform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3D2AF17-53FE-4224-BAA1-57153C8C40C6}|DIP\\DIP.csproj|solutionrelative:dip\\msform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -42,8 +42,7 @@
               "RelativeToolTip": "B11223210\\pch.cpp",
               "ViewState": "AgIAANwBAAAAAAAAAAAAAOgBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-09T01:48:04.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T01:48:04.132Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "DIP\\MSForm.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAFMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T12:49:38.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T12:49:38.315Z"
             },
             {
               "$type": "Document",
@@ -67,12 +65,11 @@
               "ToolTip": "C:\\Users\\vivi4\\Desktop\\DIP-MDI\\DIP\\MSForm.cs [\u8A2D\u8A08]",
               "RelativeToolTip": "DIP\\MSForm.cs [\u8A2D\u8A08]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T12:49:36.511Z",
-              "EditorCaption": " [\u8A2D\u8A08]"
+              "WhenOpened": "2025-06-08T12:49:36.511Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DIPSample.cs",
               "DocumentMoniker": "C:\\Users\\vivi4\\Desktop\\DIP-MDI\\DIP\\DIPSample.cs",
               "RelativeDocumentMoniker": "DIP\\DIPSample.cs",
@@ -85,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DIPSample.cs [\u8A2D\u8A08]",
               "DocumentMoniker": "C:\\Users\\vivi4\\Desktop\\DIP-MDI\\DIP\\DIPSample.cs",
               "RelativeDocumentMoniker": "DIP\\DIPSample.cs",
